@@ -3,7 +3,7 @@
    1 second, then yield a random number between 0 and 10. Use the
    random module
 """
-from typing import Generator
+from typing import Generator, Iterator
 from random import uniform
 import asyncio
 
