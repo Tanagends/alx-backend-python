@@ -3,12 +3,12 @@
    1 second, then yield a random number between 0 and 10. Use the
    random module
 """
-from typing import Iterator
+from typing import Generator
 from random import uniform
 import asyncio
 
 
-async def async_generator() -> Iterator[int]:
+async def async_generator() -> Iterator[float]:
     """loops 10 times yielding a random value"""
     for _ in range(10):
         await asyncio.sleep(1)
